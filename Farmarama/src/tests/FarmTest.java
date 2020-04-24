@@ -1,8 +1,8 @@
-package classes;
+package tests;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+import classes.Farm;
 
 class FarmTest {
 
