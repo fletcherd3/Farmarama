@@ -6,7 +6,7 @@ public class Farm {
 
 	private String name;
 	private String type;
-	private double balance;
+	private Double balance;
 	private Farmer farmer;
 	private Hashtable<String, Double> bonuses;
 	private List<Crop> crops;
@@ -20,9 +20,9 @@ public class Farm {
 	public void setType(String newType) {
 		// Setter for the farms type
 		if (newType == "Plain") {
-			bonuses.put(newType, 2.0);
+			bonuses.put("animalHealth", 2.0);
 		} else if (newType == "Cold") {
-			bonuses.put(newType, 1.5);
+			bonuses.put("animalHealth", 1.5);
 		}
 
 	}
@@ -65,10 +65,13 @@ public class Farm {
 	
 	public Boolean modifyBalance(Double amount) {
 		// Modifies the farms balance by the given amount
+		Boolean returnValue = false;
 		if ((balance + amount) >= 0); {
 			balance = balance + amount;
-			return true;
+			returnValue = true;
 		} 
+		
+		return returnValue;
 		
 	}
 }
