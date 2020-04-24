@@ -19,6 +19,7 @@ public class Farm {
 
 	public void setType(String newType) {
 		// Setter for the farms type
+		type = newType;
 		if (newType == "Plain") {
 			bonuses.put(newType, 2.0);
 		} else if (newType == "Cold") {
@@ -65,10 +66,12 @@ public class Farm {
 	
 	public Boolean modifyBalance(Double amount) {
 		// Modifies the farms balance by the given amount
+		Boolean returnValue = false;
 		if ((balance + amount) >= 0); {
 			balance = balance + amount;
-			return true;
+			returnValue = true;
 		} 
+		return returnValue;
 		
 	}
 }

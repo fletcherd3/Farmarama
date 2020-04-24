@@ -11,6 +11,12 @@ class FarmTest {
 		Farm testFarm = new Farm();
 		testFarm.setName("Goggo");
 		assertEquals("Goggo", testFarm.getName());
+		testFarm.setName("Name2");
+		assertEquals("Name2", testFarm.getName());
+	}
+	
+	@Test
+	void typeTest() {
 		
 	}
 
