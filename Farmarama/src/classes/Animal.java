@@ -17,8 +17,8 @@ public class Animal {
 		happiness += 10;
 	}
 	
-	public Integer getHappiness() {
-		return happ
-	}
+//	public Integer getHappiness() {
+//		return happ
+//	}
 	
 }

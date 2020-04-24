@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import classes.Farm;
 
 class FarmTest {
-
+	
 	@Test
 	void nameTest() {
 		Farm testFarm = new Farm();
@@ -17,6 +17,10 @@ class FarmTest {
 	
 	@Test
 	void typeTest() {
+		Farm testFarm = new Farm();
+		testFarm.setType("Plain");
+		assertEquals("Plain", testFarm.getType());
+		
 	}
 
 }
